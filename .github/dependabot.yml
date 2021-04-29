@@ -1,0 +1,56 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: stylelint
+    versions:
+    - 13.10.0
+    - 13.11.0
+    - 13.12.0
+    - 13.9.0
+  - dependency-name: typescript
+    versions:
+    - 4.1.3
+    - 4.1.4
+    - 4.1.5
+    - 4.2.2
+    - 4.2.3
+  - dependency-name: "@aspida/axios"
+    versions:
+    - 1.3.0
+    - 1.4.1
+    - 1.5.0
+    - 1.6.1
+    - 1.6.3
+  - dependency-name: "@nuxtjs/axios"
+    versions:
+    - 5.12.5
+    - 5.13.0
+  - dependency-name: nuxt
+    versions:
+    - 2.14.12
+    - 2.15.0
+    - 2.15.1
+    - 2.15.2
+    - 2.15.3
+  - dependency-name: "@nuxt/types"
+    versions:
+    - 2.14.12
+    - 2.15.0
+    - 2.15.1
+    - 2.15.2
+    - 2.15.3
+  - dependency-name: lint-staged
+    versions:
+    - 10.5.3
+  - dependency-name: "@nuxtjs/eslint-config-typescript"
+    versions:
+    - 5.0.0
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
